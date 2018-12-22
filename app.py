@@ -32,8 +32,8 @@ def homepage():
             
     def minute():
         while True:
-            if dt.now().minute == 34: 
-                print("now.minute = 34")   
+            if dt.now().minute == 36: 
+                print("now.minute = 36")   
             
         
             else:
@@ -72,7 +72,7 @@ def homepage():
 
     def playMusic():
         if allTrue() == True:
-            mixer.music.load('C:/Users/Daniel F/Desktop/Poopity New/Lift Yourself.wav')
+            mixer.music.load('Lift Yourself.wav')
             mixer.music.play()
 
 playMusic()
