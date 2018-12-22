@@ -1,11 +1,13 @@
 from flask import Flask
 from datetime import datetime
+from datetime import datetime as dt
+import time
+import webbrowser
 app = Flask(__name__)
 
 @app.route('/')
 def homepage():
-    from datetime import datetime as dt
-    import time
+
 
     def day():
         while True:
@@ -32,8 +34,8 @@ def homepage():
             
     def minute():
         while True:
-            if dt.now().minute == 45: 
-                print("now.minute = 45")   
+            if dt.now().minute == 54: 
+                print("now.minute = 54")   
             
         
             else:
@@ -65,18 +67,15 @@ def homepage():
     second()           
     allTrue()
 
-    import pygame
-    from pygame import mixer
-    pygame.mixer.pre_init(44100, 16, 2, 4096)
-    pygame.init()
-
     def playMusic():
         if allTrue() == True:
-            mixer.music.load('Lift_Yourself.wav')
-            mixer.music.play()
+            webbrowser.open('https://s0.vocaroo.com/media/download_temp/Vocaroo_s0HThOXEH3gI.mp3')
+            
 
-playMusic()
+    playMusic()
+    
     return playmusic
+
     <h1>Hello heroku</h1>
     <p>The music will play at 12/22/2018 at 2:34.</p>
 
